@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>select a variable js</title>
+    
+    <script type="text/javascript">
+        var getData = function() {
+           var select = document.getElementById("name").value;
+           
+
+           if(select == 1){
+            
+            
+                 console.log('funciona')
+        }
+
+            else if(select == 2){
+                console.log('sigue funcionando')
+            
+        
+            }
+            else if(select == 3){
+                console.log('con este tambien')
+            }
+        }
+        
+       
+    </script>
+</head>
+<body>
+   
+   <select name="" id="name" onchange="getData()">
+       <option >Elige tu estado de animo</option>
+       <option value="1">enamorado</option>
+       <option value="2">ansioso</option>
+       <option value="3">triste</option>
+   </select>
+   
+</body>
+</html>
